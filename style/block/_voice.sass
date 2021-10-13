@@ -1,0 +1,106 @@
+.voice
+    background: url('../img/bgvoice.png') center center / cover no-repeat,  #3b3838
+    width: 100%
+    padding: 25px 40px
+    font-family: Montserrat
+    &__wrapper
+        display: grid
+        grid-template: 366px 104px/431px 269px 449px
+    &__description
+        grid-column: 1/2  
+        grid-row: 1/2
+    &__body
+        grid-column: 2/3  
+        grid-row: 1/3  
+        overflow: hidden
+        position: relative
+        padding-top: 30px
+    &__girl
+        margin: 0 auto
+        width: 80%
+        z-index: 2
+        overflow: hidden
+        & img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            bottom: -450px
+            position: relative
+            z-index: 3
+            &.fade1
+                animation: up 1.5s 1.7s forwards 
+            &.fade2
+                animation: levi .8s alternate infinite
+
+    &__ring
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 130px
+        position: relative
+        top: -66px
+        &-black
+            background: #000
+            width: 0
+            height: 0
+            border-radius: 50%     
+            animation: ring 2.5s ease 1s forwards
+            position: absolute
+            transform: perspective(100px) rotateX(7deg)
+    &__say
+        grid-column: 1/2  
+        grid-row: 2/3 
+        font-size: 30px
+        font-weight: 900
+        line-height: 40px
+        text-align: left
+        color: #fff
+        &-span.second
+            padding-left: 40px
+    &__menu
+        grid-column: 3/4  
+        grid-row: 1/3   
+    &__menu-img
+        width: 100%
+        & img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__header
+        font-size: 36px
+        font-weight: 400
+        line-height: 40px
+        letter-spacing: 0em
+        text-align: left
+        color: #fff
+        margin-bottom: 30px
+    &__txt
+        font-size: 16px
+        font-weight: 400
+        line-height: 22px
+        text-align: left
+        color: #fff
+        
+@keyframes ring
+    
+    50%
+        width: 170px 
+        height: 35px 
+    75%
+        width: 160px 
+        height: 35px    
+    100%
+        width: 115px   
+        height: 25px 
+        
+@keyframes up
+    100%
+        bottom: 15px
+@keyframes levi
+    0%
+        bottom: 15px
+    100%
+        bottom: 7px
+                        

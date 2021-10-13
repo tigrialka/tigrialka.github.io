@@ -1,0 +1,76 @@
+.table  
+    margin: 0 auto
+    padding: 20px 90px 20px 50px
+    width: 100vw
+    height: auto
+    background: #F3F3F3
+    font-family: 'Roboto', sans-serif
+    &__wrapper
+        display: grid
+        grid-template: repeat(3, auto) / 1.2fr 1fr
+        align-items: center
+        justify-content: center
+        row-gap: 5px
+    &__left
+        grid-column: 1/2 
+        grid-row: 1/3   
+    &__title
+        grid-column: 2/3 
+    &__description-f
+        grid-column: 2/3 
+    &__description-s
+        grid-column: 2/3             
+    &__images
+        position: relative
+        top: -160px
+    &__img
+        position: absolute
+        & img
+            transform: scale(1.3)
+            width: 100%
+            height: 100%
+            object-fit: cover  
+    &__btns
+        width: 280px   
+        z-index: 10 
+        position: absolute
+        display: flex
+        justify-content: space-between
+        align-items: center      
+        left: 50%
+        transform: translateX(-50%)
+        top: 260px
+    &__description-f
+        padding-bottom: 5px    
+    &__header
+        font-weight: 300
+        font-size: 45px
+        line-height: 52px
+        text-align: left
+        color: #0B64FE
+        padding-bottom: 20px
+    &__txt
+        line-height: 25px
+        font-size: 18px
+        text-align: left
+        color:#181818   
+        padding-right: 15px
+      
+.btn
+    background: #A6FFFF
+    width: 120px
+    height: 120px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    text-transform: uppercase
+    font-size: 25px
+    cursor: pointer
+    &:hover
+        border: 3px solid #1d41e4
+    &:active
+        border: 3px solid #0be41d  
+#imgUp
+    transition: all .6s
